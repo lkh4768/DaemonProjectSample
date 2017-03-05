@@ -1,3 +1,0 @@
-<map id="xyz.swwarehouse.daemon.sample.Worker.sleep" name="xyz.swwarehouse.daemon.sample.Worker.sleep">
-<area shape="rect" id="node2" href="$classxyz_1_1swwarehouse_1_1daemon_1_1sample_1_1_worker.html#af1bf199e3277a2946e59c7acc5416731" title="1초마다 n를 1씩 증가 시킨 후, 표준 출력. " alt="" coords="280,5,507,46"/>
-</map>
