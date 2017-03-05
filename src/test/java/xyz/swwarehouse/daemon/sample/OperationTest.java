@@ -6,11 +6,21 @@ package xyz.swwarehouse.daemon.sample;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+/**
+ * @author WES
+ * @version 1.0.0
+ * @brief Operation 클래스에 대한 단위테스트
+ * @date 2017-03-05
+ */
+
 public class OperationTest {
+    /**
+     * @brief IncreamentNum 함수에 대한 유닛테스트
+     */
 	@Test
-	public void testIncreatmentNumMethod() {
+	public void testIncreamentNumMethod() {
 		Operation op = new Operation();
 		int n = 0;
-		assertEquals(n + 1, op.increatmentNum(n));
+		assertEquals(n + 1, op.increamentNum(n));
 	}
 }
