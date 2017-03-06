@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -66,6 +73,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
       <li><a href="functions.html"><span>클래스&#160;멤버</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classxyz_1_1swwarehouse_1_1daemon_1_1sample_1_1_main.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -80,11 +102,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacexyz.html">xyz</a></li><li class="navelem"><a class="el" href="namespacexyz_1_1swwarehouse.html">swwarehouse</a></li><li class="navelem"><a class="el" href="namespacexyz_1_1swwarehouse_1_1daemon.html">daemon</a></li><li class="navelem"><a class="el" href="namespacexyz_1_1swwarehouse_1_1daemon_1_1sample.html">sample</a></li><li class="navelem"><a class="el" href="classxyz_1_1swwarehouse_1_1daemon_1_1sample_1_1_main.html">Main</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">정적 Public 멤버 함수</a> &#124;
@@ -100,8 +117,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
 xyz.swwarehouse.daemon.sample.Main에 대한 협력 다이어그램:</div>
 <div class="dyncontent">
 <div class="center"><img src="classxyz_1_1swwarehouse_1_1daemon_1_1sample_1_1_main__coll__graph.png" border="0" usemap="#xyz_8swwarehouse_8daemon_8sample_8_main_coll__map" alt="Collaboration graph"/></div>
-<map name="xyz_8swwarehouse_8daemon_8sample_8_main_coll__map" id="xyz_8swwarehouse_8daemon_8sample_8_main_coll__map">
-</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -160,11 +175,15 @@ xyz.swwarehouse.daemon.sample.Main에 대한 협력 다이어그램:</div>
 <li>src/main/java/xyz/swwarehouse/daemon/sample/<a class="el" href="_main_8java_source.html">Main.java</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-다음에 의해 생성됨 :  &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacexyz.html">xyz</a></li><li class="navelem"><a class="el" href="namespacexyz_1_1swwarehouse.html">swwarehouse</a></li><li class="navelem"><a class="el" href="namespacexyz_1_1swwarehouse_1_1daemon.html">daemon</a></li><li class="navelem"><a class="el" href="namespacexyz_1_1swwarehouse_1_1daemon_1_1sample.html">sample</a></li><li class="navelem"><a class="el" href="classxyz_1_1swwarehouse_1_1daemon_1_1sample_1_1_main.html">Main</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
 </body>
 </html>
