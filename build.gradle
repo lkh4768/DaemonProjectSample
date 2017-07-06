@@ -26,7 +26,7 @@ jar {
   }
 }
 
-/* sonarqube
+/* sonarqube */
 buildscript {
     repositories {
         maven {
@@ -42,11 +42,10 @@ apply plugin: 'org.sonarqube'
 
 sonarqube {
     properties {
-        property "sonar.projectName", "SampleDeamon-Java"
-        property "sonar.projectKey", "xyz.sw-warehouse.sampledaemon-java"
+        property "sonar.projectName", "Sample-Deamon-Java"
+        property "sonar.projectKey", "sample-daemon-java"
         property "sonar.sources", "src/main"
         property "sonar.tests", "src/test"
         property "sonar.sourceEncoding", "UTF-8"
     }
 }
-*/
